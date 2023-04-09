@@ -1,8 +1,8 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
@@ -72,16 +72,16 @@ body::after {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    border-radius: 23px;
+    transform: translate(-50%, -50%);
     -webkit-border-radius: 23px;
     -moz-border-radius: 23px;
     -ms-border-radius: 23px;
     -o-border-radius: 23px;
+    border-radius: 23px;
     overflow: hidden;
 }
 
@@ -181,5 +181,11 @@ nav ul li a:hover {
 
     body::after {
         clip-path: circle(30% at bottom);
+    }
+}
+
+@media (max-width: 372px) {
+    nav ul li a {
+        font-size: 15px;
     }
 }
