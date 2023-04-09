@@ -1,2 +1,3 @@
 # Adidas_Shoes_Simple_Clone
-Simple Adidas Shoes Clone Page
+Adidas Shoes Simple Clone
+Created with HTML, CSS, and Media Query
